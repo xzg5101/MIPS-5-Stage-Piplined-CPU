@@ -1,0 +1,1407 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Fri Dec 11 00:00:58 2020
+| Host         : DESKTOP-NR8I4U9 running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file ALU_timing_summary_routed.rpt -pb ALU_timing_summary_routed.pb -rpx ALU_timing_summary_routed.rpx -warn_on_violation
+| Design       : ALU
+| Device       : 7z020-clg484
+| Speed File   : -3  PRODUCTION 1.12 2019-11-22
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     13.783        0.000                      0                   32        4.931        0.000                      0                   32           NA           NA                      NA                    NA  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock          Waveform(ns)       Period(ns)      Frequency(MHz)
+-----          ------------       ----------      --------------
+virtual_clock  {0.000 15.000}     30.000          33.333          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock              WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----              -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+virtual_clock       13.783        0.000                      0                   32        4.931        0.000                      0                   32                                                                          
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  virtual_clock
+  To Clock:  virtual_clock
+
+Setup :            0  Failing Endpoints,  Worst Slack       13.783ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        4.931ns,  Total Violation        0.000ns
+PW    :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             13.783ns  (required time - arrival time)
+  Source:                 ex_mux_out[28]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[25]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Max at Slow Process Corner
+  Requirement:            30.000ns  (virtual_clock rise@30.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        13.192ns  (logic 4.746ns (35.979%)  route 8.446ns (64.021%))
+  Logic Levels:           12  (CARRY4=8 IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+  Input Delay:            2.000ns
+  Output Delay:           1.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  2.000     2.000    
+    K19                                               0.000     2.000 r  ex_mux_out[28] (IN)
+                         net (fo=0)                   0.000     2.000    ex_mux_out[28]
+    K19                  IBUF (Prop_ibuf_I_O)         0.787     2.787 r  ex_mux_out_IBUF[28]_inst/O
+                         net (fo=6, routed)           3.112     5.899    ex_mux_out_IBUF[28]
+    SLICE_X113Y24        LUT4 (Prop_lut4_I0_O)        0.097     5.996 r  alu_out_OBUF[31]_inst_i_23/O
+                         net (fo=1, routed)           0.000     5.996    alu_out_OBUF[31]_inst_i_23_n_0
+    SLICE_X113Y24        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.301     6.297 r  alu_out_OBUF[31]_inst_i_6/CO[3]
+                         net (fo=33, routed)          0.896     7.193    alu_out_OBUF[31]_inst_i_6_n_0
+    SLICE_X110Y18        LUT5 (Prop_lut5_I1_O)        0.097     7.290 r  alu_out_OBUF[3]_inst_i_2/O
+                         net (fo=1, routed)           0.120     7.410    alu_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.392     7.802 r  alu_out_OBUF[3]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.802    alu_out_OBUF[3]_inst_i_1_n_0
+    SLICE_X111Y19        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.891 r  alu_out_OBUF[7]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.891    alu_out_OBUF[7]_inst_i_1_n_0
+    SLICE_X111Y20        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.980 r  alu_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.980    alu_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X111Y21        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.069 r  alu_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.069    alu_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X111Y22        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.158 r  alu_out_OBUF[19]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.158    alu_out_OBUF[19]_inst_i_1_n_0
+    SLICE_X111Y23        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.247 r  alu_out_OBUF[23]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.247    alu_out_OBUF[23]_inst_i_1_n_0
+    SLICE_X111Y24        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.230     8.477 r  alu_out_OBUF[27]_inst_i_1/O[1]
+                         net (fo=1, routed)           4.318    12.794    alu_out_OBUF[25]
+    Y8                   OBUF (Prop_obuf_I_O)         2.398    15.192 r  alu_out_OBUF[25]_inst/O
+                         net (fo=0)                   0.000    15.192    alu_out[25]
+    Y8                                                                r  alu_out[25] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                     30.000    30.000 r  
+                         ideal clock network latency
+                                                      0.000    30.000    
+                         clock pessimism              0.000    30.000    
+                         clock uncertainty           -0.025    29.975    
+                         output delay                -1.000    28.975    
+  -------------------------------------------------------------------
+                         required time                         28.975    
+                         arrival time                         -15.192    
+  -------------------------------------------------------------------
+                         slack                                 13.783    
+
+Slack (MET) :             13.820ns  (required time - arrival time)
+  Source:                 ex_mux_out[28]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[29]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Max at Slow Process Corner
+  Requirement:            30.000ns  (virtual_clock rise@30.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        13.155ns  (logic 4.877ns (37.072%)  route 8.278ns (62.928%))
+  Logic Levels:           13  (CARRY4=9 IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+  Input Delay:            2.000ns
+  Output Delay:           1.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  2.000     2.000    
+    K19                                               0.000     2.000 r  ex_mux_out[28] (IN)
+                         net (fo=0)                   0.000     2.000    ex_mux_out[28]
+    K19                  IBUF (Prop_ibuf_I_O)         0.787     2.787 r  ex_mux_out_IBUF[28]_inst/O
+                         net (fo=6, routed)           3.112     5.899    ex_mux_out_IBUF[28]
+    SLICE_X113Y24        LUT4 (Prop_lut4_I0_O)        0.097     5.996 r  alu_out_OBUF[31]_inst_i_23/O
+                         net (fo=1, routed)           0.000     5.996    alu_out_OBUF[31]_inst_i_23_n_0
+    SLICE_X113Y24        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.301     6.297 r  alu_out_OBUF[31]_inst_i_6/CO[3]
+                         net (fo=33, routed)          0.896     7.193    alu_out_OBUF[31]_inst_i_6_n_0
+    SLICE_X110Y18        LUT5 (Prop_lut5_I1_O)        0.097     7.290 r  alu_out_OBUF[3]_inst_i_2/O
+                         net (fo=1, routed)           0.120     7.410    alu_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.392     7.802 r  alu_out_OBUF[3]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.802    alu_out_OBUF[3]_inst_i_1_n_0
+    SLICE_X111Y19        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.891 r  alu_out_OBUF[7]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.891    alu_out_OBUF[7]_inst_i_1_n_0
+    SLICE_X111Y20        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.980 r  alu_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.980    alu_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X111Y21        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.069 r  alu_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.069    alu_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X111Y22        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.158 r  alu_out_OBUF[19]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.158    alu_out_OBUF[19]_inst_i_1_n_0
+    SLICE_X111Y23        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.247 r  alu_out_OBUF[23]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.247    alu_out_OBUF[23]_inst_i_1_n_0
+    SLICE_X111Y24        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.336 r  alu_out_OBUF[27]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.007     8.343    alu_out_OBUF[27]_inst_i_1_n_0
+    SLICE_X111Y25        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.230     8.573 r  alu_out_OBUF[31]_inst_i_1/O[1]
+                         net (fo=1, routed)           4.143    12.716    alu_out_OBUF[29]
+    Y10                  OBUF (Prop_obuf_I_O)         2.439    15.155 r  alu_out_OBUF[29]_inst/O
+                         net (fo=0)                   0.000    15.155    alu_out[29]
+    Y10                                                               r  alu_out[29] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                     30.000    30.000 r  
+                         ideal clock network latency
+                                                      0.000    30.000    
+                         clock pessimism              0.000    30.000    
+                         clock uncertainty           -0.025    29.975    
+                         output delay                -1.000    28.975    
+  -------------------------------------------------------------------
+                         required time                         28.975    
+                         arrival time                         -15.155    
+  -------------------------------------------------------------------
+                         slack                                 13.820    
+
+Slack (MET) :             13.847ns  (required time - arrival time)
+  Source:                 ex_mux_out[28]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[27]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Max at Slow Process Corner
+  Requirement:            30.000ns  (virtual_clock rise@30.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        13.128ns  (logic 4.779ns (36.403%)  route 8.349ns (63.597%))
+  Logic Levels:           12  (CARRY4=8 IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+  Input Delay:            2.000ns
+  Output Delay:           1.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  2.000     2.000    
+    K19                                               0.000     2.000 r  ex_mux_out[28] (IN)
+                         net (fo=0)                   0.000     2.000    ex_mux_out[28]
+    K19                  IBUF (Prop_ibuf_I_O)         0.787     2.787 r  ex_mux_out_IBUF[28]_inst/O
+                         net (fo=6, routed)           3.112     5.899    ex_mux_out_IBUF[28]
+    SLICE_X113Y24        LUT4 (Prop_lut4_I0_O)        0.097     5.996 r  alu_out_OBUF[31]_inst_i_23/O
+                         net (fo=1, routed)           0.000     5.996    alu_out_OBUF[31]_inst_i_23_n_0
+    SLICE_X113Y24        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.301     6.297 r  alu_out_OBUF[31]_inst_i_6/CO[3]
+                         net (fo=33, routed)          0.896     7.193    alu_out_OBUF[31]_inst_i_6_n_0
+    SLICE_X110Y18        LUT5 (Prop_lut5_I1_O)        0.097     7.290 r  alu_out_OBUF[3]_inst_i_2/O
+                         net (fo=1, routed)           0.120     7.410    alu_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.392     7.802 r  alu_out_OBUF[3]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.802    alu_out_OBUF[3]_inst_i_1_n_0
+    SLICE_X111Y19        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.891 r  alu_out_OBUF[7]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.891    alu_out_OBUF[7]_inst_i_1_n_0
+    SLICE_X111Y20        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.980 r  alu_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.980    alu_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X111Y21        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.069 r  alu_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.069    alu_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X111Y22        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.158 r  alu_out_OBUF[19]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.158    alu_out_OBUF[19]_inst_i_1_n_0
+    SLICE_X111Y23        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.247 r  alu_out_OBUF[23]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.247    alu_out_OBUF[23]_inst_i_1_n_0
+    SLICE_X111Y24        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.234     8.481 r  alu_out_OBUF[27]_inst_i_1/O[3]
+                         net (fo=1, routed)           4.221    12.702    alu_out_OBUF[27]
+    AA8                  OBUF (Prop_obuf_I_O)         2.426    15.128 r  alu_out_OBUF[27]_inst/O
+                         net (fo=0)                   0.000    15.128    alu_out[27]
+    AA8                                                               r  alu_out[27] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                     30.000    30.000 r  
+                         ideal clock network latency
+                                                      0.000    30.000    
+                         clock pessimism              0.000    30.000    
+                         clock uncertainty           -0.025    29.975    
+                         output delay                -1.000    28.975    
+  -------------------------------------------------------------------
+                         required time                         28.975    
+                         arrival time                         -15.128    
+  -------------------------------------------------------------------
+                         slack                                 13.847    
+
+Slack (MET) :             13.939ns  (required time - arrival time)
+  Source:                 ex_mux_out[28]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[31]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Max at Slow Process Corner
+  Requirement:            30.000ns  (virtual_clock rise@30.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        13.036ns  (logic 4.867ns (37.336%)  route 8.169ns (62.664%))
+  Logic Levels:           13  (CARRY4=9 IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+  Input Delay:            2.000ns
+  Output Delay:           1.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  2.000     2.000    
+    K19                                               0.000     2.000 r  ex_mux_out[28] (IN)
+                         net (fo=0)                   0.000     2.000    ex_mux_out[28]
+    K19                  IBUF (Prop_ibuf_I_O)         0.787     2.787 r  ex_mux_out_IBUF[28]_inst/O
+                         net (fo=6, routed)           3.112     5.899    ex_mux_out_IBUF[28]
+    SLICE_X113Y24        LUT4 (Prop_lut4_I0_O)        0.097     5.996 r  alu_out_OBUF[31]_inst_i_23/O
+                         net (fo=1, routed)           0.000     5.996    alu_out_OBUF[31]_inst_i_23_n_0
+    SLICE_X113Y24        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.301     6.297 r  alu_out_OBUF[31]_inst_i_6/CO[3]
+                         net (fo=33, routed)          0.896     7.193    alu_out_OBUF[31]_inst_i_6_n_0
+    SLICE_X110Y18        LUT5 (Prop_lut5_I1_O)        0.097     7.290 r  alu_out_OBUF[3]_inst_i_2/O
+                         net (fo=1, routed)           0.120     7.410    alu_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.392     7.802 r  alu_out_OBUF[3]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.802    alu_out_OBUF[3]_inst_i_1_n_0
+    SLICE_X111Y19        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.891 r  alu_out_OBUF[7]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.891    alu_out_OBUF[7]_inst_i_1_n_0
+    SLICE_X111Y20        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.980 r  alu_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.980    alu_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X111Y21        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.069 r  alu_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.069    alu_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X111Y22        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.158 r  alu_out_OBUF[19]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.158    alu_out_OBUF[19]_inst_i_1_n_0
+    SLICE_X111Y23        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.247 r  alu_out_OBUF[23]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.247    alu_out_OBUF[23]_inst_i_1_n_0
+    SLICE_X111Y24        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.336 r  alu_out_OBUF[27]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.007     8.343    alu_out_OBUF[27]_inst_i_1_n_0
+    SLICE_X111Y25        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.234     8.577 r  alu_out_OBUF[31]_inst_i_1/O[3]
+                         net (fo=1, routed)           4.034    12.611    alu_out_OBUF[31]
+    AB9                  OBUF (Prop_obuf_I_O)         2.425    15.036 r  alu_out_OBUF[31]_inst/O
+                         net (fo=0)                   0.000    15.036    alu_out[31]
+    AB9                                                               r  alu_out[31] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                     30.000    30.000 r  
+                         ideal clock network latency
+                                                      0.000    30.000    
+                         clock pessimism              0.000    30.000    
+                         clock uncertainty           -0.025    29.975    
+                         output delay                -1.000    28.975    
+  -------------------------------------------------------------------
+                         required time                         28.975    
+                         arrival time                         -15.036    
+  -------------------------------------------------------------------
+                         slack                                 13.939    
+
+Slack (MET) :             14.003ns  (required time - arrival time)
+  Source:                 ex_mux_out[28]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[24]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Max at Slow Process Corner
+  Requirement:            30.000ns  (virtual_clock rise@30.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        12.972ns  (logic 4.660ns (35.928%)  route 8.311ns (64.072%))
+  Logic Levels:           12  (CARRY4=8 IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+  Input Delay:            2.000ns
+  Output Delay:           1.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  2.000     2.000    
+    K19                                               0.000     2.000 r  ex_mux_out[28] (IN)
+                         net (fo=0)                   0.000     2.000    ex_mux_out[28]
+    K19                  IBUF (Prop_ibuf_I_O)         0.787     2.787 r  ex_mux_out_IBUF[28]_inst/O
+                         net (fo=6, routed)           3.112     5.899    ex_mux_out_IBUF[28]
+    SLICE_X113Y24        LUT4 (Prop_lut4_I0_O)        0.097     5.996 r  alu_out_OBUF[31]_inst_i_23/O
+                         net (fo=1, routed)           0.000     5.996    alu_out_OBUF[31]_inst_i_23_n_0
+    SLICE_X113Y24        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.301     6.297 r  alu_out_OBUF[31]_inst_i_6/CO[3]
+                         net (fo=33, routed)          0.896     7.193    alu_out_OBUF[31]_inst_i_6_n_0
+    SLICE_X110Y18        LUT5 (Prop_lut5_I1_O)        0.097     7.290 r  alu_out_OBUF[3]_inst_i_2/O
+                         net (fo=1, routed)           0.120     7.410    alu_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.392     7.802 r  alu_out_OBUF[3]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.802    alu_out_OBUF[3]_inst_i_1_n_0
+    SLICE_X111Y19        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.891 r  alu_out_OBUF[7]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.891    alu_out_OBUF[7]_inst_i_1_n_0
+    SLICE_X111Y20        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.980 r  alu_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.980    alu_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X111Y21        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.069 r  alu_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.069    alu_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X111Y22        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.158 r  alu_out_OBUF[19]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.158    alu_out_OBUF[19]_inst_i_1_n_0
+    SLICE_X111Y23        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.247 r  alu_out_OBUF[23]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.247    alu_out_OBUF[23]_inst_i_1_n_0
+    SLICE_X111Y24        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.159     8.406 r  alu_out_OBUF[27]_inst_i_1/O[0]
+                         net (fo=1, routed)           4.183    12.589    alu_out_OBUF[24]
+    Y6                   OBUF (Prop_obuf_I_O)         2.383    14.972 r  alu_out_OBUF[24]_inst/O
+                         net (fo=0)                   0.000    14.972    alu_out[24]
+    Y6                                                                r  alu_out[24] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                     30.000    30.000 r  
+                         ideal clock network latency
+                                                      0.000    30.000    
+                         clock pessimism              0.000    30.000    
+                         clock uncertainty           -0.025    29.975    
+                         output delay                -1.000    28.975    
+  -------------------------------------------------------------------
+                         required time                         28.975    
+                         arrival time                         -14.972    
+  -------------------------------------------------------------------
+                         slack                                 14.003    
+
+Slack (MET) :             14.008ns  (required time - arrival time)
+  Source:                 ex_mux_out[28]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[28]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Max at Slow Process Corner
+  Requirement:            30.000ns  (virtual_clock rise@30.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        12.967ns  (logic 4.788ns (36.922%)  route 8.179ns (63.078%))
+  Logic Levels:           13  (CARRY4=9 IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+  Input Delay:            2.000ns
+  Output Delay:           1.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  2.000     2.000    
+    K19                                               0.000     2.000 r  ex_mux_out[28] (IN)
+                         net (fo=0)                   0.000     2.000    ex_mux_out[28]
+    K19                  IBUF (Prop_ibuf_I_O)         0.787     2.787 r  ex_mux_out_IBUF[28]_inst/O
+                         net (fo=6, routed)           3.112     5.899    ex_mux_out_IBUF[28]
+    SLICE_X113Y24        LUT4 (Prop_lut4_I0_O)        0.097     5.996 r  alu_out_OBUF[31]_inst_i_23/O
+                         net (fo=1, routed)           0.000     5.996    alu_out_OBUF[31]_inst_i_23_n_0
+    SLICE_X113Y24        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.301     6.297 r  alu_out_OBUF[31]_inst_i_6/CO[3]
+                         net (fo=33, routed)          0.896     7.193    alu_out_OBUF[31]_inst_i_6_n_0
+    SLICE_X110Y18        LUT5 (Prop_lut5_I1_O)        0.097     7.290 r  alu_out_OBUF[3]_inst_i_2/O
+                         net (fo=1, routed)           0.120     7.410    alu_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.392     7.802 r  alu_out_OBUF[3]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.802    alu_out_OBUF[3]_inst_i_1_n_0
+    SLICE_X111Y19        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.891 r  alu_out_OBUF[7]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.891    alu_out_OBUF[7]_inst_i_1_n_0
+    SLICE_X111Y20        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.980 r  alu_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.980    alu_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X111Y21        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.069 r  alu_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.069    alu_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X111Y22        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.158 r  alu_out_OBUF[19]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.158    alu_out_OBUF[19]_inst_i_1_n_0
+    SLICE_X111Y23        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.247 r  alu_out_OBUF[23]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.247    alu_out_OBUF[23]_inst_i_1_n_0
+    SLICE_X111Y24        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.336 r  alu_out_OBUF[27]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.007     8.343    alu_out_OBUF[27]_inst_i_1_n_0
+    SLICE_X111Y25        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.159     8.502 r  alu_out_OBUF[31]_inst_i_1/O[0]
+                         net (fo=1, routed)           4.044    12.546    alu_out_OBUF[28]
+    AA9                  OBUF (Prop_obuf_I_O)         2.421    14.967 r  alu_out_OBUF[28]_inst/O
+                         net (fo=0)                   0.000    14.967    alu_out[28]
+    AA9                                                               r  alu_out[28] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                     30.000    30.000 r  
+                         ideal clock network latency
+                                                      0.000    30.000    
+                         clock pessimism              0.000    30.000    
+                         clock uncertainty           -0.025    29.975    
+                         output delay                -1.000    28.975    
+  -------------------------------------------------------------------
+                         required time                         28.975    
+                         arrival time                         -14.967    
+  -------------------------------------------------------------------
+                         slack                                 14.008    
+
+Slack (MET) :             14.016ns  (required time - arrival time)
+  Source:                 ex_mux_out[28]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[23]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Max at Slow Process Corner
+  Requirement:            30.000ns  (virtual_clock rise@30.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        12.959ns  (logic 4.651ns (35.890%)  route 8.308ns (64.110%))
+  Logic Levels:           11  (CARRY4=7 IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+  Input Delay:            2.000ns
+  Output Delay:           1.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  2.000     2.000    
+    K19                                               0.000     2.000 r  ex_mux_out[28] (IN)
+                         net (fo=0)                   0.000     2.000    ex_mux_out[28]
+    K19                  IBUF (Prop_ibuf_I_O)         0.787     2.787 r  ex_mux_out_IBUF[28]_inst/O
+                         net (fo=6, routed)           3.112     5.899    ex_mux_out_IBUF[28]
+    SLICE_X113Y24        LUT4 (Prop_lut4_I0_O)        0.097     5.996 r  alu_out_OBUF[31]_inst_i_23/O
+                         net (fo=1, routed)           0.000     5.996    alu_out_OBUF[31]_inst_i_23_n_0
+    SLICE_X113Y24        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.301     6.297 r  alu_out_OBUF[31]_inst_i_6/CO[3]
+                         net (fo=33, routed)          0.896     7.193    alu_out_OBUF[31]_inst_i_6_n_0
+    SLICE_X110Y18        LUT5 (Prop_lut5_I1_O)        0.097     7.290 r  alu_out_OBUF[3]_inst_i_2/O
+                         net (fo=1, routed)           0.120     7.410    alu_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.392     7.802 r  alu_out_OBUF[3]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.802    alu_out_OBUF[3]_inst_i_1_n_0
+    SLICE_X111Y19        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.891 r  alu_out_OBUF[7]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.891    alu_out_OBUF[7]_inst_i_1_n_0
+    SLICE_X111Y20        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.980 r  alu_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.980    alu_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X111Y21        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.069 r  alu_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.069    alu_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X111Y22        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.158 r  alu_out_OBUF[19]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.158    alu_out_OBUF[19]_inst_i_1_n_0
+    SLICE_X111Y23        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.234     8.392 r  alu_out_OBUF[23]_inst_i_1/O[3]
+                         net (fo=1, routed)           4.180    12.572    alu_out_OBUF[23]
+    Y5                   OBUF (Prop_obuf_I_O)         2.387    14.959 r  alu_out_OBUF[23]_inst/O
+                         net (fo=0)                   0.000    14.959    alu_out[23]
+    Y5                                                                r  alu_out[23] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                     30.000    30.000 r  
+                         ideal clock network latency
+                                                      0.000    30.000    
+                         clock pessimism              0.000    30.000    
+                         clock uncertainty           -0.025    29.975    
+                         output delay                -1.000    28.975    
+  -------------------------------------------------------------------
+                         required time                         28.975    
+                         arrival time                         -14.959    
+  -------------------------------------------------------------------
+                         slack                                 14.016    
+
+Slack (MET) :             14.115ns  (required time - arrival time)
+  Source:                 ex_mux_out[28]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[20]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Max at Slow Process Corner
+  Requirement:            30.000ns  (virtual_clock rise@30.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        12.860ns  (logic 4.591ns (35.697%)  route 8.270ns (64.303%))
+  Logic Levels:           11  (CARRY4=7 IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+  Input Delay:            2.000ns
+  Output Delay:           1.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  2.000     2.000    
+    K19                                               0.000     2.000 r  ex_mux_out[28] (IN)
+                         net (fo=0)                   0.000     2.000    ex_mux_out[28]
+    K19                  IBUF (Prop_ibuf_I_O)         0.787     2.787 r  ex_mux_out_IBUF[28]_inst/O
+                         net (fo=6, routed)           3.112     5.899    ex_mux_out_IBUF[28]
+    SLICE_X113Y24        LUT4 (Prop_lut4_I0_O)        0.097     5.996 r  alu_out_OBUF[31]_inst_i_23/O
+                         net (fo=1, routed)           0.000     5.996    alu_out_OBUF[31]_inst_i_23_n_0
+    SLICE_X113Y24        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.301     6.297 r  alu_out_OBUF[31]_inst_i_6/CO[3]
+                         net (fo=33, routed)          0.896     7.193    alu_out_OBUF[31]_inst_i_6_n_0
+    SLICE_X110Y18        LUT5 (Prop_lut5_I1_O)        0.097     7.290 r  alu_out_OBUF[3]_inst_i_2/O
+                         net (fo=1, routed)           0.120     7.410    alu_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.392     7.802 r  alu_out_OBUF[3]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.802    alu_out_OBUF[3]_inst_i_1_n_0
+    SLICE_X111Y19        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.891 r  alu_out_OBUF[7]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.891    alu_out_OBUF[7]_inst_i_1_n_0
+    SLICE_X111Y20        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.980 r  alu_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.980    alu_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X111Y21        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.069 r  alu_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.069    alu_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X111Y22        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.158 r  alu_out_OBUF[19]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.158    alu_out_OBUF[19]_inst_i_1_n_0
+    SLICE_X111Y23        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.159     8.317 r  alu_out_OBUF[23]_inst_i_1/O[0]
+                         net (fo=1, routed)           4.142    12.458    alu_out_OBUF[20]
+    AB2                  OBUF (Prop_obuf_I_O)         2.402    14.860 r  alu_out_OBUF[20]_inst/O
+                         net (fo=0)                   0.000    14.860    alu_out[20]
+    AB2                                                               r  alu_out[20] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                     30.000    30.000 r  
+                         ideal clock network latency
+                                                      0.000    30.000    
+                         clock pessimism              0.000    30.000    
+                         clock uncertainty           -0.025    29.975    
+                         output delay                -1.000    28.975    
+  -------------------------------------------------------------------
+                         required time                         28.975    
+                         arrival time                         -14.860    
+  -------------------------------------------------------------------
+                         slack                                 14.115    
+
+Slack (MET) :             14.212ns  (required time - arrival time)
+  Source:                 ex_mux_out[28]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[16]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Max at Slow Process Corner
+  Requirement:            30.000ns  (virtual_clock rise@30.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        12.763ns  (logic 4.493ns (35.204%)  route 8.270ns (64.796%))
+  Logic Levels:           10  (CARRY4=6 IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+  Input Delay:            2.000ns
+  Output Delay:           1.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  2.000     2.000    
+    K19                                               0.000     2.000 r  ex_mux_out[28] (IN)
+                         net (fo=0)                   0.000     2.000    ex_mux_out[28]
+    K19                  IBUF (Prop_ibuf_I_O)         0.787     2.787 r  ex_mux_out_IBUF[28]_inst/O
+                         net (fo=6, routed)           3.112     5.899    ex_mux_out_IBUF[28]
+    SLICE_X113Y24        LUT4 (Prop_lut4_I0_O)        0.097     5.996 r  alu_out_OBUF[31]_inst_i_23/O
+                         net (fo=1, routed)           0.000     5.996    alu_out_OBUF[31]_inst_i_23_n_0
+    SLICE_X113Y24        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.301     6.297 r  alu_out_OBUF[31]_inst_i_6/CO[3]
+                         net (fo=33, routed)          0.896     7.193    alu_out_OBUF[31]_inst_i_6_n_0
+    SLICE_X110Y18        LUT5 (Prop_lut5_I1_O)        0.097     7.290 r  alu_out_OBUF[3]_inst_i_2/O
+                         net (fo=1, routed)           0.120     7.410    alu_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.392     7.802 r  alu_out_OBUF[3]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.802    alu_out_OBUF[3]_inst_i_1_n_0
+    SLICE_X111Y19        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.891 r  alu_out_OBUF[7]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.891    alu_out_OBUF[7]_inst_i_1_n_0
+    SLICE_X111Y20        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.980 r  alu_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.980    alu_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X111Y21        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.069 r  alu_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.069    alu_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X111Y22        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.159     8.228 r  alu_out_OBUF[19]_inst_i_1/O[0]
+                         net (fo=1, routed)           4.142    12.370    alu_out_OBUF[16]
+    AB7                  OBUF (Prop_obuf_I_O)         2.393    14.763 r  alu_out_OBUF[16]_inst/O
+                         net (fo=0)                   0.000    14.763    alu_out[16]
+    AB7                                                               r  alu_out[16] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                     30.000    30.000 r  
+                         ideal clock network latency
+                                                      0.000    30.000    
+                         clock pessimism              0.000    30.000    
+                         clock uncertainty           -0.025    29.975    
+                         output delay                -1.000    28.975    
+  -------------------------------------------------------------------
+                         required time                         28.975    
+                         arrival time                         -14.763    
+  -------------------------------------------------------------------
+                         slack                                 14.212    
+
+Slack (MET) :             14.214ns  (required time - arrival time)
+  Source:                 ex_mux_out[28]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[19]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Max at Slow Process Corner
+  Requirement:            30.000ns  (virtual_clock rise@30.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        12.761ns  (logic 4.602ns (36.060%)  route 8.159ns (63.940%))
+  Logic Levels:           10  (CARRY4=6 IBUF=1 LUT4=1 LUT5=1 OBUF=1)
+  Input Delay:            2.000ns
+  Output Delay:           1.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  2.000     2.000    
+    K19                                               0.000     2.000 r  ex_mux_out[28] (IN)
+                         net (fo=0)                   0.000     2.000    ex_mux_out[28]
+    K19                  IBUF (Prop_ibuf_I_O)         0.787     2.787 r  ex_mux_out_IBUF[28]_inst/O
+                         net (fo=6, routed)           3.112     5.899    ex_mux_out_IBUF[28]
+    SLICE_X113Y24        LUT4 (Prop_lut4_I0_O)        0.097     5.996 r  alu_out_OBUF[31]_inst_i_23/O
+                         net (fo=1, routed)           0.000     5.996    alu_out_OBUF[31]_inst_i_23_n_0
+    SLICE_X113Y24        CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.301     6.297 r  alu_out_OBUF[31]_inst_i_6/CO[3]
+                         net (fo=33, routed)          0.896     7.193    alu_out_OBUF[31]_inst_i_6_n_0
+    SLICE_X110Y18        LUT5 (Prop_lut5_I1_O)        0.097     7.290 r  alu_out_OBUF[3]_inst_i_2/O
+                         net (fo=1, routed)           0.120     7.410    alu_out_OBUF[3]_inst_i_2_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_DI[0]_CO[3])
+                                                      0.392     7.802 r  alu_out_OBUF[3]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.802    alu_out_OBUF[3]_inst_i_1_n_0
+    SLICE_X111Y19        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.891 r  alu_out_OBUF[7]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.891    alu_out_OBUF[7]_inst_i_1_n_0
+    SLICE_X111Y20        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     7.980 r  alu_out_OBUF[11]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     7.980    alu_out_OBUF[11]_inst_i_1_n_0
+    SLICE_X111Y21        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.089     8.069 r  alu_out_OBUF[15]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     8.069    alu_out_OBUF[15]_inst_i_1_n_0
+    SLICE_X111Y22        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.234     8.303 r  alu_out_OBUF[19]_inst_i_1/O[3]
+                         net (fo=1, routed)           4.031    12.334    alu_out_OBUF[19]
+    AB1                  OBUF (Prop_obuf_I_O)         2.427    14.761 r  alu_out_OBUF[19]_inst/O
+                         net (fo=0)                   0.000    14.761    alu_out[19]
+    AB1                                                               r  alu_out[19] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                     30.000    30.000 r  
+                         ideal clock network latency
+                                                      0.000    30.000    
+                         clock pessimism              0.000    30.000    
+                         clock uncertainty           -0.025    29.975    
+                         output delay                -1.000    28.975    
+  -------------------------------------------------------------------
+                         required time                         28.975    
+                         arrival time                         -14.761    
+  -------------------------------------------------------------------
+                         slack                                 14.214    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.931ns  (arrival time - required time)
+  Source:                 erd_a[20]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[21]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (virtual_clock rise@0.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        3.456ns  (logic 1.608ns (46.511%)  route 1.849ns (53.489%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT5=1 LUT6=1 OBUF=1)
+  Input Delay:            1.000ns
+  Output Delay:           0.500ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  1.000     1.000    
+    U15                                               0.000     1.000 r  erd_a[20] (IN)
+                         net (fo=0)                   0.000     1.000    erd_a[20]
+    U15                  IBUF (Prop_ibuf_I_O)         0.190     1.190 r  erd_a_IBUF[20]_inst/O
+                         net (fo=8, routed)           0.442     1.632    erd_a_IBUF[20]
+    SLICE_X108Y23        LUT5 (Prop_lut5_I1_O)        0.045     1.677 r  alu_out_OBUF[23]_inst_i_14/O
+                         net (fo=1, routed)           0.106     1.783    alu_out_OBUF[23]_inst_i_14_n_0
+    SLICE_X111Y23        LUT6 (Prop_lut6_I3_O)        0.045     1.828 r  alu_out_OBUF[23]_inst_i_5/O
+                         net (fo=1, routed)           0.000     1.828    p_0_in[20]
+    SLICE_X111Y23        CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.106     1.934 r  alu_out_OBUF[23]_inst_i_1/O[1]
+                         net (fo=1, routed)           1.301     3.235    alu_out_OBUF[21]
+    AA6                  OBUF (Prop_obuf_I_O)         1.221     4.456 r  alu_out_OBUF[21]_inst/O
+                         net (fo=0)                   0.000     4.456    alu_out[21]
+    AA6                                                               r  alu_out[21] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.500    -0.475    
+  -------------------------------------------------------------------
+                         required time                          0.475    
+                         arrival time                           4.456    
+  -------------------------------------------------------------------
+                         slack                                  4.931    
+
+Slack (MET) :             4.941ns  (arrival time - required time)
+  Source:                 erd_a[16]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[17]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (virtual_clock rise@0.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        3.466ns  (logic 1.602ns (46.219%)  route 1.864ns (53.781%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT5=1 LUT6=1 OBUF=1)
+  Input Delay:            1.000ns
+  Output Delay:           0.500ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  1.000     1.000    
+    AA17                                              0.000     1.000 r  erd_a[16] (IN)
+                         net (fo=0)                   0.000     1.000    erd_a[16]
+    AA17                 IBUF (Prop_ibuf_I_O)         0.198     1.198 r  erd_a_IBUF[16]_inst/O
+                         net (fo=8, routed)           0.510     1.708    erd_a_IBUF[16]
+    SLICE_X108Y22        LUT5 (Prop_lut5_I1_O)        0.045     1.753 r  alu_out_OBUF[19]_inst_i_14/O
+                         net (fo=1, routed)           0.106     1.858    alu_out_OBUF[19]_inst_i_14_n_0
+    SLICE_X111Y22        LUT6 (Prop_lut6_I3_O)        0.045     1.903 r  alu_out_OBUF[19]_inst_i_5/O
+                         net (fo=1, routed)           0.000     1.903    p_0_in[16]
+    SLICE_X111Y22        CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.106     2.009 r  alu_out_OBUF[19]_inst_i_1/O[1]
+                         net (fo=1, routed)           1.249     3.258    alu_out_OBUF[17]
+    AB4                  OBUF (Prop_obuf_I_O)         1.208     4.466 r  alu_out_OBUF[17]_inst/O
+                         net (fo=0)                   0.000     4.466    alu_out[17]
+    AB4                                                               r  alu_out[17] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.500    -0.475    
+  -------------------------------------------------------------------
+                         required time                          0.475    
+                         arrival time                           4.466    
+  -------------------------------------------------------------------
+                         slack                                  4.941    
+
+Slack (MET) :             5.040ns  (arrival time - required time)
+  Source:                 erd_a[12]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[13]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (virtual_clock rise@0.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        3.565ns  (logic 1.594ns (44.715%)  route 1.971ns (55.285%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT6=2 OBUF=1)
+  Input Delay:            1.000ns
+  Output Delay:           0.500ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  1.000     1.000    
+    V14                                               0.000     1.000 r  erd_a[12] (IN)
+                         net (fo=0)                   0.000     1.000    erd_a[12]
+    V14                  IBUF (Prop_ibuf_I_O)         0.193     1.193 r  erd_a_IBUF[12]_inst/O
+                         net (fo=8, routed)           0.578     1.771    erd_a_IBUF[12]
+    SLICE_X112Y21        LUT6 (Prop_lut6_I1_O)        0.045     1.816 r  alu_out_OBUF[15]_inst_i_13/O
+                         net (fo=1, routed)           0.122     1.938    alu_out_OBUF[15]_inst_i_13_n_0
+    SLICE_X111Y21        LUT6 (Prop_lut6_I2_O)        0.045     1.983 r  alu_out_OBUF[15]_inst_i_5/O
+                         net (fo=1, routed)           0.000     1.983    p_0_in[12]
+    SLICE_X111Y21        CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.106     2.089 r  alu_out_OBUF[15]_inst_i_1/O[1]
+                         net (fo=1, routed)           1.270     3.360    alu_out_OBUF[13]
+    AA4                  OBUF (Prop_obuf_I_O)         1.206     4.565 r  alu_out_OBUF[13]_inst/O
+                         net (fo=0)                   0.000     4.565    alu_out[13]
+    AA4                                                               r  alu_out[13] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.500    -0.475    
+  -------------------------------------------------------------------
+                         required time                          0.475    
+                         arrival time                           4.565    
+  -------------------------------------------------------------------
+                         slack                                  5.040    
+
+Slack (MET) :             5.100ns  (arrival time - required time)
+  Source:                 erd_a[0]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[1]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (virtual_clock rise@0.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        3.625ns  (logic 1.535ns (42.339%)  route 2.090ns (57.661%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT5=1 LUT6=1 OBUF=1)
+  Input Delay:            1.000ns
+  Output Delay:           0.500ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  1.000     1.000    
+    U14                                               0.000     1.000 r  erd_a[0] (IN)
+                         net (fo=0)                   0.000     1.000    erd_a[0]
+    U14                  IBUF (Prop_ibuf_I_O)         0.161     1.161 r  erd_a_IBUF[0]_inst/O
+                         net (fo=9, routed)           0.569     1.730    erd_a_IBUF[0]
+    SLICE_X112Y18        LUT6 (Prop_lut6_I1_O)        0.045     1.775 r  alu_out_OBUF[3]_inst_i_15/O
+                         net (fo=1, routed)           0.092     1.867    alu_out_OBUF[3]_inst_i_15_n_0
+    SLICE_X111Y18        LUT5 (Prop_lut5_I1_O)        0.045     1.912 r  alu_out_OBUF[3]_inst_i_6/O
+                         net (fo=1, routed)           0.000     1.912    alu_out_OBUF[3]_inst_i_6_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_S[0]_O[1])
+                                                      0.106     2.018 r  alu_out_OBUF[3]_inst_i_1/O[1]
+                         net (fo=1, routed)           1.429     3.447    alu_out_OBUF[1]
+    W5                   OBUF (Prop_obuf_I_O)         1.177     4.625 r  alu_out_OBUF[1]_inst/O
+                         net (fo=0)                   0.000     4.625    alu_out[1]
+    W5                                                                r  alu_out[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.500    -0.475    
+  -------------------------------------------------------------------
+                         required time                          0.475    
+                         arrival time                           4.625    
+  -------------------------------------------------------------------
+                         slack                                  5.100    
+
+Slack (MET) :             5.115ns  (arrival time - required time)
+  Source:                 erd_a[9]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[9]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (virtual_clock rise@0.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        3.640ns  (logic 1.521ns (41.795%)  route 2.118ns (58.205%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT6=2 OBUF=1)
+  Input Delay:            1.000ns
+  Output Delay:           0.500ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  1.000     1.000    
+    W13                                               0.000     1.000 r  erd_a[9] (IN)
+                         net (fo=0)                   0.000     1.000    erd_a[9]
+    W13                  IBUF (Prop_ibuf_I_O)         0.199     1.199 r  erd_a_IBUF[9]_inst/O
+                         net (fo=8, routed)           0.529     1.728    erd_a_IBUF[9]
+    SLICE_X113Y20        LUT6 (Prop_lut6_I1_O)        0.045     1.773 r  alu_out_OBUF[11]_inst_i_11/O
+                         net (fo=1, routed)           0.249     2.022    alu_out_OBUF[11]_inst_i_11_n_0
+    SLICE_X111Y20        LUT6 (Prop_lut6_I2_O)        0.045     2.067 r  alu_out_OBUF[11]_inst_i_4/O
+                         net (fo=1, routed)           0.000     2.067    p_0_in[9]
+    SLICE_X111Y20        CARRY4 (Prop_carry4_S[1]_O[1])
+                                                      0.065     2.132 r  alu_out_OBUF[11]_inst_i_1/O[1]
+                         net (fo=1, routed)           1.340     3.472    alu_out_OBUF[9]
+    U4                   OBUF (Prop_obuf_I_O)         1.167     4.640 r  alu_out_OBUF[9]_inst/O
+                         net (fo=0)                   0.000     4.640    alu_out[9]
+    U4                                                                r  alu_out[9] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.500    -0.475    
+  -------------------------------------------------------------------
+                         required time                          0.475    
+                         arrival time                           4.640    
+  -------------------------------------------------------------------
+                         slack                                  5.115    
+
+Slack (MET) :             5.144ns  (arrival time - required time)
+  Source:                 erd_a[0]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[5]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (virtual_clock rise@0.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        3.669ns  (logic 1.653ns (45.060%)  route 2.016ns (54.940%))
+  Logic Levels:           6  (CARRY4=2 IBUF=1 LUT5=1 LUT6=1 OBUF=1)
+  Input Delay:            1.000ns
+  Output Delay:           0.500ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  1.000     1.000    
+    U14                                               0.000     1.000 r  erd_a[0] (IN)
+                         net (fo=0)                   0.000     1.000    erd_a[0]
+    U14                  IBUF (Prop_ibuf_I_O)         0.161     1.161 r  erd_a_IBUF[0]_inst/O
+                         net (fo=9, routed)           0.569     1.730    erd_a_IBUF[0]
+    SLICE_X112Y18        LUT6 (Prop_lut6_I1_O)        0.045     1.775 r  alu_out_OBUF[3]_inst_i_15/O
+                         net (fo=1, routed)           0.092     1.867    alu_out_OBUF[3]_inst_i_15_n_0
+    SLICE_X111Y18        LUT5 (Prop_lut5_I1_O)        0.045     1.912 r  alu_out_OBUF[3]_inst_i_6/O
+                         net (fo=1, routed)           0.000     1.912    alu_out_OBUF[3]_inst_i_6_n_0
+    SLICE_X111Y18        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.152     2.064 r  alu_out_OBUF[3]_inst_i_1/CO[3]
+                         net (fo=1, routed)           0.000     2.064    alu_out_OBUF[3]_inst_i_1_n_0
+    SLICE_X111Y19        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.091     2.155 r  alu_out_OBUF[7]_inst_i_1/O[1]
+                         net (fo=1, routed)           1.354     3.510    alu_out_OBUF[5]
+    U5                   OBUF (Prop_obuf_I_O)         1.159     4.669 r  alu_out_OBUF[5]_inst/O
+                         net (fo=0)                   0.000     4.669    alu_out[5]
+    U5                                                                r  alu_out[5] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.500    -0.475    
+  -------------------------------------------------------------------
+                         required time                          0.475    
+                         arrival time                           4.669    
+  -------------------------------------------------------------------
+                         slack                                  5.144    
+
+Slack (MET) :             5.176ns  (arrival time - required time)
+  Source:                 erd_a[20]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[22]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (virtual_clock rise@0.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        3.701ns  (logic 1.655ns (44.734%)  route 2.045ns (55.266%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT5=1 LUT6=1 OBUF=1)
+  Input Delay:            1.000ns
+  Output Delay:           0.500ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  1.000     1.000    
+    U15                                               0.000     1.000 r  erd_a[20] (IN)
+                         net (fo=0)                   0.000     1.000    erd_a[20]
+    U15                  IBUF (Prop_ibuf_I_O)         0.190     1.190 r  erd_a_IBUF[20]_inst/O
+                         net (fo=8, routed)           0.442     1.632    erd_a_IBUF[20]
+    SLICE_X108Y23        LUT5 (Prop_lut5_I1_O)        0.045     1.677 r  alu_out_OBUF[23]_inst_i_14/O
+                         net (fo=1, routed)           0.106     1.783    alu_out_OBUF[23]_inst_i_14_n_0
+    SLICE_X111Y23        LUT6 (Prop_lut6_I3_O)        0.045     1.828 r  alu_out_OBUF[23]_inst_i_5/O
+                         net (fo=1, routed)           0.000     1.828    p_0_in[20]
+    SLICE_X111Y23        CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.146     1.974 r  alu_out_OBUF[23]_inst_i_1/O[2]
+                         net (fo=1, routed)           1.497     3.472    alu_out_OBUF[22]
+    AA7                  OBUF (Prop_obuf_I_O)         1.229     4.701 r  alu_out_OBUF[22]_inst/O
+                         net (fo=0)                   0.000     4.701    alu_out[22]
+    AA7                                                               r  alu_out[22] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.500    -0.475    
+  -------------------------------------------------------------------
+                         required time                          0.475    
+                         arrival time                           4.701    
+  -------------------------------------------------------------------
+                         slack                                  5.176    
+
+Slack (MET) :             5.272ns  (arrival time - required time)
+  Source:                 erd_a[26]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[26]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (virtual_clock rise@0.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        3.797ns  (logic 1.571ns (41.389%)  route 2.225ns (58.611%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT5=1 LUT6=1 OBUF=1)
+  Input Delay:            1.000ns
+  Output Delay:           0.500ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  1.000     1.000    
+    Y18                                               0.000     1.000 r  erd_a[26] (IN)
+                         net (fo=0)                   0.000     1.000    erd_a[26]
+    Y18                  IBUF (Prop_ibuf_I_O)         0.197     1.197 r  erd_a_IBUF[26]_inst/O
+                         net (fo=8, routed)           0.501     1.698    erd_a_IBUF[26]
+    SLICE_X108Y25        LUT5 (Prop_lut5_I1_O)        0.045     1.743 r  alu_out_OBUF[27]_inst_i_10/O
+                         net (fo=1, routed)           0.162     1.906    alu_out_OBUF[27]_inst_i_10_n_0
+    SLICE_X111Y24        LUT6 (Prop_lut6_I3_O)        0.045     1.951 r  alu_out_OBUF[27]_inst_i_3/O
+                         net (fo=1, routed)           0.000     1.951    p_0_in[26]
+    SLICE_X111Y24        CARRY4 (Prop_carry4_S[2]_O[2])
+                                                      0.066     2.017 r  alu_out_OBUF[27]_inst_i_1/O[2]
+                         net (fo=1, routed)           1.562     3.579    alu_out_OBUF[26]
+    Y9                   OBUF (Prop_obuf_I_O)         1.218     4.797 r  alu_out_OBUF[26]_inst/O
+                         net (fo=0)                   0.000     4.797    alu_out[26]
+    Y9                                                                r  alu_out[26] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.500    -0.475    
+  -------------------------------------------------------------------
+                         required time                          0.475    
+                         arrival time                           4.797    
+  -------------------------------------------------------------------
+                         slack                                  5.272    
+
+Slack (MET) :             5.334ns  (arrival time - required time)
+  Source:                 erd_a[29]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[30]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (virtual_clock rise@0.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        3.859ns  (logic 1.722ns (44.630%)  route 2.137ns (55.370%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT5=1 LUT6=1 OBUF=1)
+  Input Delay:            1.000ns
+  Output Delay:           0.500ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  1.000     1.000    
+    AB20                                              0.000     1.000 r  erd_a[29] (IN)
+                         net (fo=0)                   0.000     1.000    erd_a[29]
+    AB20                 IBUF (Prop_ibuf_I_O)         0.206     1.206 r  erd_a_IBUF[29]_inst/O
+                         net (fo=8, routed)           0.392     1.598    erd_a_IBUF[29]
+    SLICE_X111Y26        LUT5 (Prop_lut5_I1_O)        0.045     1.643 r  alu_out_OBUF[31]_inst_i_14/O
+                         net (fo=1, routed)           0.132     1.774    alu_out_OBUF[31]_inst_i_14_n_0
+    SLICE_X111Y25        LUT6 (Prop_lut6_I3_O)        0.045     1.819 r  alu_out_OBUF[31]_inst_i_4/O
+                         net (fo=1, routed)           0.000     1.819    p_0_in[29]
+    SLICE_X111Y25        CARRY4 (Prop_carry4_S[1]_O[2])
+                                                      0.152     1.971 r  alu_out_OBUF[31]_inst_i_1/O[2]
+                         net (fo=1, routed)           1.614     3.585    alu_out_OBUF[30]
+    Y11                  OBUF (Prop_obuf_I_O)         1.274     4.859 r  alu_out_OBUF[30]_inst/O
+                         net (fo=0)                   0.000     4.859    alu_out[30]
+    Y11                                                               r  alu_out[30] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.500    -0.475    
+  -------------------------------------------------------------------
+                         required time                          0.475    
+                         arrival time                           4.859    
+  -------------------------------------------------------------------
+                         slack                                  5.334    
+
+Slack (MET) :             5.682ns  (arrival time - required time)
+  Source:                 erd_a[12]
+                            (input port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Destination:            alu_out[12]
+                            (output port clocked by virtual_clock  {rise@0.000ns fall@15.000ns period=30.000ns})
+  Path Group:             virtual_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (virtual_clock rise@0.000ns - virtual_clock rise@0.000ns)
+  Data Path Delay:        4.207ns  (logic 1.550ns (36.848%)  route 2.657ns (63.152%))
+  Logic Levels:           5  (CARRY4=1 IBUF=1 LUT6=2 OBUF=1)
+  Input Delay:            1.000ns
+  Output Delay:           0.500ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  1.000     1.000    
+    V14                                               0.000     1.000 r  erd_a[12] (IN)
+                         net (fo=0)                   0.000     1.000    erd_a[12]
+    V14                  IBUF (Prop_ibuf_I_O)         0.193     1.193 r  erd_a_IBUF[12]_inst/O
+                         net (fo=8, routed)           0.578     1.771    erd_a_IBUF[12]
+    SLICE_X112Y21        LUT6 (Prop_lut6_I1_O)        0.045     1.816 r  alu_out_OBUF[15]_inst_i_13/O
+                         net (fo=1, routed)           0.122     1.938    alu_out_OBUF[15]_inst_i_13_n_0
+    SLICE_X111Y21        LUT6 (Prop_lut6_I2_O)        0.045     1.983 r  alu_out_OBUF[15]_inst_i_5/O
+                         net (fo=1, routed)           0.000     1.983    p_0_in[12]
+    SLICE_X111Y21        CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.070     2.053 r  alu_out_OBUF[15]_inst_i_1/O[0]
+                         net (fo=1, routed)           1.956     4.009    alu_out_OBUF[12]
+    R6                   OBUF (Prop_obuf_I_O)         1.197     5.207 r  alu_out_OBUF[12]_inst/O
+                         net (fo=0)                   0.000     5.207    alu_out[12]
+    R6                                                                r  alu_out[12] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clock rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.025     0.025    
+                         output delay                -0.500    -0.475    
+  -------------------------------------------------------------------
+                         required time                          0.475    
+                         arrival time                           5.207    
+  -------------------------------------------------------------------
+                         slack                                  5.682    
+
+
+
+
+
+
